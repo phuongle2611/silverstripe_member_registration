@@ -1,5 +1,5 @@
 <?php
-class MemberDecorator extends DataExtension{
+class MemberDecorator extends DataExtension{ 
 
 	private static  $db=array(
 				"JobTitle" => 'Varchar',
@@ -14,7 +14,7 @@ class MemberDecorator extends DataExtension{
 		$fields->addFieldToTab("Root.Profile", new TextField('Website', 'Website', 'http://')); 		
 		$fields->addFieldToTab("Root.Profile", new TextareaField('Blurb', 'Blurb')); 		
 	}
-
+	
 	//Link to the edit profile page
 	function Link()
 	{
@@ -23,4 +23,5 @@ class MemberDecorator extends DataExtension{
 			return $ProfilePage->Link();
 		}
 	}
+	
 }

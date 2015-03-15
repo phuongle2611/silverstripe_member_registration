@@ -31,7 +31,7 @@
 		
 		<a href="$Link.?edit=1">Edit details</a>
 		<br/>
-		<a href="/Security/logout">Log Out</a>
+		<a href="Security/logout">Log Out</a>
 	
 	<% end_if %>
 
