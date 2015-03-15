@@ -1,0 +1,21 @@
+{
+  "name": "phuongle/silverstripe_member_registration",
+  "description": "Simple member registration and profile details editting",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/phuongle2611/silverstripe_member_registration",
+  "keywords": ["silverstripe", "member", "registration"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Phuong Le","email": "phuongle2611@hotmail.com"}
+  ],
+  "support": {
+    "issues": "http://github.com/phuongle2611/silverstripe_member_registration/issues"
+  },
+  "require": {
+    "silverstripe/cms": "~3.1",
+    "silverstripe/framework": "~3.1"
+  },
+  "extra": {
+    "installer-name": "Registration"
+  }
+}
