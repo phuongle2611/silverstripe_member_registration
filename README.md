@@ -19,13 +19,13 @@ Installation Instructions
 Usage Overview
 --------------
 
-IN CMS under sitetree, create a page with page type "Member Page" and it's showed under Menu. Create 2 more invisible page under "Member Page" with page type "Registration Page" and "Edit Profile Page".
+IN CMS under sitetree, create a page with page type "Member Page" and tick to show under Menu. Create 2 more invisible page under "Member Page" with page type "Registration Page" and "Edit Profile Page".
 
-Member Page type is a wrapper of Registratrion Page and Edit Profile Page. When user navigate to Member Page, it will redirect to registration page for new user or to Edit Profile Page for logged in user.
+"Member Page" type is a wrapper of "Registratrion Page" and "Edit Profile Page". When user navigate to "Member Page", it will redirect to "registration page" for new user or to "Edit Profile Page" for logged in user to edit his profile.
 
-After new user register to the website, website will redirect user to Edit Profile Page.
+After new user register to the website, website will redirect user to "Edit Profile Page".
 
-Developer also can extend data of the member class in MemberDecoderator.php
+Developer also can extend data of the member class in MemberDecoderator.php.
 
 
 Known Issues
