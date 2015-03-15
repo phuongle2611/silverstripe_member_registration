@@ -1,19 +1,5 @@
 <?php
-class MemberDecorator extends DataExtension{ //DataObjectDecorator {
-
-	//Add extra database fields
-	/*
-	public function extraStatics()
-	{	
-		return array(
-			'db' => array(
-				"JobTitle" => 'Varchar',
-				"Blurb" => "Text",
-				"Website" => "Varchar(100)"
-			)
-		);
-	}
-	*/
+class MemberDecorator extends DataExtension{
 
 	private static  $db=array(
 				"JobTitle" => 'Varchar',

@@ -18,7 +18,7 @@ class MemberPage_Controller extends Page_Controller{
 		else{
 			//echo "do edit registration";
 			if ($EditProfilePage = DataObject::get_one('EditProfilePage')){
-				return $this->redirect($EditProfilePage->Link('?success=1'));
+				return $this->redirect($EditProfilePage->Link());
 
 			}
 		}

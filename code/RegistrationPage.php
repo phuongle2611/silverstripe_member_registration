@@ -23,7 +23,7 @@ class RegistrationPage_Controller extends Page_Controller
 			{
 				//echo "profile page exists";
 				//Redirect to profile page with success message
-				return $this->redirect($ProfilePage->Link('?success=1'));			
+				return $this->redirect($ProfilePage->Link());			
 			}
 
 	    }
@@ -73,11 +73,11 @@ class RegistrationPage_Controller extends Page_Controller
 			$Member->login();
 			
 			//Find or create the 'user' group
-			if(!$userGroup = DataObject::get_one('Group', "Code = 'Employees'"))
+			if(!$userGroup = DataObject::get_one('Group', "Code = 'users'"))
 			{
 				$userGroup = new Group();
-				$userGroup->Code = "Employees";
-				$userGroup->Title = "Employees";
+				$userGroup->Code = "users";
+				$userGroup->Title = "users";
 				$userGroup->Write();
 				$userGroup->Members()->add($Member);
 			}
@@ -89,7 +89,7 @@ class RegistrationPage_Controller extends Page_Controller
 			{
 				//echo "profile page exists";
 				//Redirect to profile page with success message
-				return $this->redirect($ProfilePage->Link('?success=1'));			
+				return $this->redirect($ProfilePage->Link());			
 			}
 			
 		}

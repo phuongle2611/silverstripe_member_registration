@@ -46,7 +46,7 @@ class EditProfilePage_Controller extends Page_Controller
 	function SaveProfile($data, $form)
 	{
 		//Check for a logged in member
-		if($CurrentMember = Member::CurrentMember())
+		if($CurrentMember = Member::currentUser())
 		{
 			//Check for another member with the same email address
 			if($member = DataObject::get_one("Member", "Email = '". Convert::raw2sql($data['Email']) . "' AND ID != " . $CurrentMember->ID)) 
@@ -81,10 +81,18 @@ class EditProfilePage_Controller extends Page_Controller
 		return $this->request->getVar('saved');
 	}
 	
+	/*
 	//Check for success status
 	function Success()
 	{
 		return $this->request->getVar('success');
-	}		
+	}
+	*/
+
+	//Check for edit status
+	function Edit(){
+		return $this->request->getVar('edit');
+	}
+
 	
 }
